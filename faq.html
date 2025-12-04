@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - Spendor Audio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Futura:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .faq-hero {
+            height: 50vh;
+            background: linear-gradient(135deg, rgba(10, 22, 40, 0.95) 0%, rgba(28, 28, 30, 0.85) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--off-white);
+        }
+        
+        .faq-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+        
+        .faq-item {
+            background: var(--cream);
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary-gold);
+            overflow: hidden;
+            transition: var(--transition-fast);
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            padding: 30px 40px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            transition: var(--transition-fast);
+        }
+        
+        .faq-question:hover {
+            background: rgba(212, 175, 55, 0.1);
+        }
+        
+        .faq-icon {
+            font-size: 1.5rem;
+            color: var(--primary-gold);
+            transition: var(--transition-fast);
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        
+        .faq-answer-content {
+            padding: 0 40px 30px 40px;
+            color: rgba(0, 0, 0, 0.8);
+            line-height: 1.8;
+        }
+        
+        .faq-answer-content p {
+            margin-bottom: 15px;
+        }
+        
+        .faq-image {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .faq-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        
+        .faq-category {
+            margin-bottom: 60px;
+        }
+        
+        .category-title {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--charcoal);
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--primary-gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">SPENDOR</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#history" class="nav-link">Heritage</a>
+                <a href="index.html#products" class="nav-link">Collections</a>
+                <a href="index.html#innovation" class="nav-link">Innovation</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FAQ Hero -->
+    <section class="faq-hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Support & Guidance</span>
+            <h1 class="hero-main" style="font-size: 4rem;">Frequently Asked Questions</h1>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <div class="faq-container">
+        <!-- Installation & Setup -->
+        <div class="faq-category">
+            <h2 class="category-title">Installation & Setup</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I install my shelf/stand mount loudspeakers?</span>
+                    <span class="faq-icon">−</span>
+                </div>
+                <div class="faq-answer" style="max-height: 500px;">
+                    <div class="faq-answer-content">
+                        <p>Spendor shelf/stand mount loudspeakers are designed to be placed on shelving, furniture or loudspeaker stands. They are supplied with self adhesive feet to ensure they are located securely. They should always be placed on a solid, stable surface.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I install my floor-standing loudspeakers?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>Spendor floor-standing loudspeakers are supplied with dedicated stabiliser feet. These make a stable connection to the floor whilst allowing your loudspeakers to be levelled.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I connect my loudspeakers?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>Set your amplifier to minimum volume and switch off the power. The amplifier output marked RIGHT should be connected to the loudspeaker positioned to the right of the listening position, and the amplifier output marked LEFT should be connected to the loudspeaker on the left. These instructions should be read in conjunction with your amplifier owner's manual. Connect a twin conductor cable to the terminals on the rear of the loudspeaker.</p>
+                        <p>The positive (+ or red) terminal on your loudspeaker must be connected to the positive (+ or red) terminal on your amplifier. The negative (- or black) terminal on the loudspeaker must be connected to the negative (- or black) terminal on your amplifier. Check the connections periodically to make sure they are secure.</p>
+                        <div class="faq-image">
+                            <img src="https://via.placeholder.com/800x400/EDE8E0/D4AF37?text=Speaker+Connection+Diagram" alt="Speaker connection diagram">
+                        </div>
+                        <p>Loudspeaker cables can have a noticeable effect on sound quality. Choose a good quality cable with high purity conductors and lowloss insulation. Some Spendor loudspeakers can be bi-amped or tri-amped. Ask your retailer for advice on cables and connection options to best suit your system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Positioning & Placement -->
+        <div class="faq-category">
+            <h2 class="category-title">Positioning & Placement</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I position my loudspeakers?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>Spendor loudspeakers are designed to operate in a wide variety of listening environments. As a guide, your loudspeakers should be placed 2 to 3 metres apart and a similar distance from the listening position. Try to position the loudspeakers at least 20cm from any rear boundary and 30cm from any side boundary, if applicable. Positioning closer to a rear wall may increase the bass output. The loudspeakers can be angled slightly towards the main listening area, to help minimise occurrence of off-axis reflections from any side walls.</p>
+                        <div class="faq-image">
+                            <img src="https://via.placeholder.com/600x400/EDE8E0/D4AF37?text=Speaker+Positioning+Diagram" alt="Speaker positioning diagram">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I position my loudspeakers for multi-channel?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>All Spendor stereo loudspeakers can be used as main or rear channel loudspeakers in a multi-channel system. For wall mounting, some Spendor shelf mount loudspeakers are available with a wall bracket fitted. Your retailer will help you choose the right solution.</p>
+                        <div class="faq-image">
+                            <img src="https://via.placeholder.com/600x400/EDE8E0/D4AF37?text=Multi-Channel+Setup+Diagram" alt="Multi-channel setup diagram">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Operation & Maintenance -->
+        <div class="faq-category">
+            <h2 class="category-title">Operation & Maintenance</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Power handling</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>The Spendor product Data Sheets give the recommended amplifier power for each loudspeaker in the Technical Specification section. This figure can be taken as a guide to the power rating (watts per channel into 8-ohm load) for a complementary amplifier. Some programme material with a high degree of low frequency content can drive loudspeakers past their safe limit of mechanical movement. If the sound becomes strained or distorted, turn the volume down. Ask your Spendor retailer for any amplifier related advice in relation to finding a suitable match for your loudspeakers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Running-in</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>Your Spendor loudspeakers will benefit from a period of 'running-in'. During this period, the stresses in the suspension system will relax and stabilise. This period is dependent on many factors, and can vary from days to weeks depending on how often and how loud you play your loudspeakers. Your loudspeakers will gradually improve as you use them during this initial period.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Care</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>Cabinet veneers should be treated like all high-quality furniture. Routine dusting with a soft cloth is recommended. Do not apply any aerosol sprays directly as they could damage the drive units. Dust can be removed by use of a soft brush or other suitable domestic duster. On some models the delicate high frequency dome is protected by a metal cover, care should be taken not to dislodge the magnetic fixing whilst dusting. Do not expose the cabinets to damp, widely fluctuating temperatures or direct sunlight as the appearance and performance may suffer. Avoid contact with rough or abrasive surfaces or materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service & Support -->
+        <div class="faq-category">
+            <h2 class="category-title">Service & Support</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Queries and service</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>If you require advice or service on your audio system please contact your local Spendor retailer. We recommend that you retain all the original packaging for your loudspeakers in case you need to transport them safely.</p>
+                        <p style="margin-top: 30px;"><a href="index.html#contact" class="cta-button">Contact Us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>SPENDOR</h3>
+                    <p>British Excellence Since 1969</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Collections</h4>
+                        <a href="a-line.html">A-Line Loudspeakers</a>
+                        <a href="d-line.html">D-Line Loudspeakers</a>
+                        <a href="classic.html">Classic Loudspeakers</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="index.html#about">About Us</a>
+                        <a href="index.html#history">Our History</a>
+                        <a href="#">News</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="faq.html">FAQ's</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://www.youtube.com/@spendor9405" target="_blank">YouTube</a>
+                        <a href="https://www.linkedin.com/company/spendor/" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/spendoraudio/" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Spendor Audio Systems Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('.faq-icon');
+                
+                // Close other open items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem && item.classList.contains('active')) {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').style.maxHeight = null;
+                        item.querySelector('.faq-icon').textContent = '+';
+                    }
+                });
+                
+                // Toggle current item
+                if (faqItem.classList.contains('active')) {
+                    faqItem.classList.remove('active');
+                    answer.style.maxHeight = null;
+                    icon.textContent = '+';
+                } else {
+                    faqItem.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.textContent = '−';
+                }
+            });
+        });
+
+        // Open first FAQ by default
+        document.querySelector('.faq-item').classList.add('active');
+    </script>
+</body>
+</html>
