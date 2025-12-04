@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Collection - Spendor Audio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Futura:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .product-hero {
+            height: 70vh;
+            background: linear-gradient(135deg, rgba(10, 22, 40, 0.95) 0%, rgba(28, 28, 30, 0.85) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--off-white);
+        }
+        
+        .product-grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .product-item {
+            background: var(--cream);
+            padding: 40px;
+            transition: var(--transition-fast);
+        }
+        
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-item h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+        }
+        
+        .product-specs {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .product-specs li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+        }
+        
+        .spec-label {
+            font-weight: 600;
+            color: var(--primary-gold);
+        }
+        
+        .heritage-badge {
+            display: inline-block;
+            background: var(--bronze);
+            color: var(--off-white);
+            padding: 5px 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">SPENDOR</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#history" class="nav-link">Heritage</a>
+                <a href="index.html#products" class="nav-link">Collections</a>
+                <a href="index.html#innovation" class="nav-link">Innovation</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Spendor Collection</span>
+            <h1 class="hero-main" style="font-size: 4.5rem;">Classic</h1>
+            <p class="hero-description">Timeless design meets immersive sonic performance</p>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">The Collection</span>
+                <h2 class="section-title">Heritage Refined</h2>
+                <p class="section-description">The Classic series delivers an immersive listening experience that many listeners find missing in other speakers. Drawing on decades of BBC heritage, these speakers offer rich tonality and musical engagement.</p>
+            </div>
+
+            <div class="product-grid-section">
+                <!-- Classic 3/1 -->
+                <div class="product-item">
+                    <span class="heritage-badge">BBC Heritage</span>
+                    <h3>Classic 3/1</h3>
+                    <p>Compact monitor delivering the classic Spendor sound with remarkable clarity and warmth.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2-way Bookshelf</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>150mm, 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>55Hz - 20kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>84dB</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+
+                <!-- Classic 3/5 -->
+                <div class="product-item">
+                    <span class="heritage-badge">BBC Heritage</span>
+                    <h3>Classic 3/5</h3>
+                    <p>Desktop or small room specialist with surprising bass depth and natural midrange.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2-way Bookshelf</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>115mm, 19mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>70Hz - 20kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>84dB</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+
+                <!-- Classic 4/5 -->
+                <div class="product-item">
+                    <span class="heritage-badge">BBC Heritage</span>
+                    <h3>Classic 4/5</h3>
+                    <p>Medium-sized bookshelf offering extended bass with the signature Classic midrange magic.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2-way Bookshelf</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>180mm, 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>49Hz - 20kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>85dB</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+
+                <!-- Classic 100 -->
+                <div class="product-item">
+                    <span class="heritage-badge">BBC Heritage</span>
+                    <h3>Classic 100</h3>
+                    <p>Elegant floorstanding design delivering room-filling sound with effortless musicality.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2.5-way Floorstanding</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>2x 180mm, 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>30Hz - 20kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>88dB</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+
+                <!-- Classic 200 -->
+                <div class="product-item">
+                    <span class="heritage-badge">BBC Heritage</span>
+                    <h3>Classic 200</h3>
+                    <p>The flagship Classic model combining heritage design with contemporary engineering excellence.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>3-way Floorstanding</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>2x 200mm, 150mm, 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>25Hz - 20kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>89dB</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+            </div>
+
+            <!-- BBC Heritage Section -->
+            <div class="section" style="margin-top: 100px;">
+                <div class="section-header centered">
+                    <span class="section-label">Heritage</span>
+                    <h2 class="section-title">The BBC Legacy</h2>
+                </div>
+                <div class="about-content" style="max-width: 900px; margin: 0 auto;">
+                    <p class="lead-text">The Classic series draws directly from our founder Spencer Hughes' work at the BBC. These speakers embody the principles established with the legendary BC1 studio monitor – natural tonal balance, accurate midrange, and long-term listening comfort.</p>
+                    <p>Each Classic loudspeaker is designed to deliver music the way artists and engineers intended it to be heard. The rich, warm tonality combined with precise detail retrieval creates an immersive listening experience that reveals new layers in familiar recordings.</p>
+                    <p>Hand-built in our UK facility using traditional cabinet-making techniques and modern acoustic engineering, Classic speakers represent the perfect marriage of heritage and innovation.</p>
+                </div>
+            </div>
+
+            <div class="cta-section" style="margin-top: 80px;">
+                <a href="index.html#products" class="secondary-button">View All Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>SPENDOR</h3>
+                    <p>British Excellence Since 1969</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Collections</h4>
+                        <a href="a-line.html">A-Line Loudspeakers</a>
+                        <a href="d-line.html">D-Line Loudspeakers</a>
+                        <a href="classic.html">Classic Loudspeakers</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="index.html#about">About Us</a>
+                        <a href="index.html#history">Our History</a>
+                        <a href="#">News</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#">FAQ's</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://www.youtube.com/@spendor9405" target="_blank">YouTube</a>
+                        <a href="https://www.linkedin.com/company/spendor/" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/spendoraudio/" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Spendor Audio Systems Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

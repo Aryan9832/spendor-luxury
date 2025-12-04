@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Line Collection - Spendor Audio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Futura:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .product-hero {
+            height: 70vh;
+            background: linear-gradient(135deg, rgba(10, 22, 40, 0.95) 0%, rgba(28, 28, 30, 0.85) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--off-white);
+        }
+        
+        .product-grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .product-item {
+            background: var(--cream);
+            padding: 40px;
+            transition: var(--transition-fast);
+            border: 2px solid transparent;
+        }
+        
+        .product-item.featured {
+            border-color: var(--primary-gold);
+        }
+        
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-item h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+        }
+        
+        .product-specs {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .product-specs li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+        }
+        
+        .spec-label {
+            font-weight: 600;
+            color: var(--primary-gold);
+        }
+        
+        .featured-badge {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: var(--deep-navy);
+            padding: 5px 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">SPENDOR</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#history" class="nav-link">Heritage</a>
+                <a href="index.html#products" class="nav-link">Collections</a>
+                <a href="index.html#innovation" class="nav-link">Innovation</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Spendor Collection</span>
+            <h1 class="hero-main" style="font-size: 4.5rem;">D-Line</h1>
+            <p class="hero-description">Resolution, accuracy and scale for high-performance systems</p>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">The Collection</span>
+                <h2 class="section-title">Reference Standard</h2>
+                <p class="section-description">The D-Line delivers resolution, accuracy and scale to bring out the very best in high-performance audio systems. Featuring our exclusive LPZ technology for unparalleled sonic precision.</p>
+            </div>
+
+            <div class="product-grid-section">
+                <!-- D1 -->
+                <div class="product-item">
+                    <h3>D1</h3>
+                    <p>Compact yet powerful, the D1 brings D-Line precision to smaller spaces without compromise.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2-way Bookshelf</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>150mm, LPZ 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>48Hz - 25kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>85dB</span></li>
+                        <li><span class="spec-label">Technology:</span> <span>LPZ Tweeter</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+
+                <!-- D2 -->
+                <div class="product-item">
+                    <h3>D2</h3>
+                    <p>Enhanced bass extension with refined midrange clarity for authentic music reproduction.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2-way Bookshelf</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>180mm, LPZ 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>44Hz - 25kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>86dB</span></li>
+                        <li><span class="spec-label">Technology:</span> <span>LPZ Tweeter</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+
+                <!-- D4.2 -->
+                <div class="product-item">
+                    <h3>D4.2</h3>
+                    <p>Slim floorstanding design offering remarkable bass extension and pristine imaging.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2.5-way Floorstanding</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>2x 150mm, LPZ 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>30Hz - 25kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>87dB</span></li>
+                        <li><span class="spec-label">Technology:</span> <span>LPZ Tweeter</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+
+                <!-- D7.2 -->
+                <div class="product-item featured">
+                    <span class="featured-badge">Award Winner</span>
+                    <h3>D7.2</h3>
+                    <p>The flagship D-Line model delivering reference-level performance with breathtaking detail.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2.5-way Floorstanding</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>2x 180mm, LPZ 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>25Hz - 25kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>88dB</span></li>
+                        <li><span class="spec-label">Technology:</span> <span>LPZ Tweeter</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+
+                <!-- D9.2 -->
+                <div class="product-item featured">
+                    <span class="featured-badge">Flagship</span>
+                    <h3>D9.2</h3>
+                    <p>The ultimate expression of Spendor engineering. Uncompromising performance for the most demanding systems.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>3-way Floorstanding</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>2x 200mm, 150mm, LPZ 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>20Hz - 25kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>89dB</span></li>
+                        <li><span class="spec-label">Technology:</span> <span>LPZ Tweeter</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+            </div>
+
+            <!-- LPZ Technology Section -->
+            <div class="section" style="margin-top: 100px;">
+                <div class="section-header centered">
+                    <span class="section-label">Technology</span>
+                    <h2 class="section-title">LPZ High Frequency Drive Unit</h2>
+                </div>
+                <div class="about-content" style="max-width: 900px; margin: 0 auto;">
+                    <p class="lead-text">The Spendor LPZ high frequency drive unit used in the D-Line products is designed to equalize sound-wave path lengths and generate a symmetrical pressure environment so the drive unit operates in a balanced linear mode.</p>
+                    <p>The result is a clean, precise signal that highlights every detail and nuance, particularly in vocals and acoustic instruments. Unique to Spendor, it is also incredibly natural and unforced, so you can enjoy listening for hours at a time without becoming fatigued.</p>
+                </div>
+            </div>
+
+            <div class="cta-section" style="margin-top: 80px;">
+                <a href="index.html#products" class="secondary-button">View All Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>SPENDOR</h3>
+                    <p>British Excellence Since 1969</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Collections</h4>
+                        <a href="a-line.html">A-Line Loudspeakers</a>
+                        <a href="d-line.html">D-Line Loudspeakers</a>
+                        <a href="classic.html">Classic Loudspeakers</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="index.html#about">About Us</a>
+                        <a href="index.html#history">Our History</a>
+                        <a href="#">News</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#">FAQ's</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://www.youtube.com/@spendor9405" target="_blank">YouTube</a>
+                        <a href="https://www.linkedin.com/company/spendor/" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/spendoraudio/" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Spendor Audio Systems Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

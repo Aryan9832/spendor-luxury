@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Line Collection - Spendor Audio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Futura:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .product-hero {
+            height: 70vh;
+            background: linear-gradient(135deg, rgba(10, 22, 40, 0.95) 0%, rgba(28, 28, 30, 0.85) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--off-white);
+        }
+        
+        .product-grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .product-item {
+            background: var(--cream);
+            padding: 40px;
+            transition: var(--transition-fast);
+        }
+        
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-item h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+        }
+        
+        .product-specs {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .product-specs li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+        }
+        
+        .spec-label {
+            font-weight: 600;
+            color: var(--primary-gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">SPENDOR</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#history" class="nav-link">Heritage</a>
+                <a href="index.html#products" class="nav-link">Collections</a>
+                <a href="index.html#innovation" class="nav-link">Innovation</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Spendor Collection</span>
+            <h1 class="hero-main" style="font-size: 4.5rem;">A-Line</h1>
+            <p class="hero-description">Captivating performance in compact, elegant designs</p>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">The Collection</span>
+                <h2 class="section-title">Compact Excellence</h2>
+                <p class="section-description">Our A-Line loudspeakers offer captivating performance in compact, elegant designs suitable for smaller spaces. Perfect harmony of form and function for discerning audiophiles.</p>
+            </div>
+
+            <div class="product-grid-section">
+                <!-- A1 -->
+                <div class="product-item">
+                    <h3>A1</h3>
+                    <p>The entry point to exceptional audio. Compact bookshelf speaker delivering surprising depth and clarity.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2-way Bookshelf</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>150mm, 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>50Hz - 25kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>84dB</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+
+                <!-- A2 -->
+                <div class="product-item">
+                    <h3>A2</h3>
+                    <p>Enhanced bass response with larger cabinet. Ideal for medium-sized rooms seeking full-range sound.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2-way Bookshelf</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>180mm, 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>46Hz - 25kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>85dB</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+
+                <!-- A4 -->
+                <div class="product-item">
+                    <h3>A4</h3>
+                    <p>Slim floorstanding design combining elegant aesthetics with impressive sonic performance.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2.5-way Floorstanding</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>2x 150mm, 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>32Hz - 25kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>87dB</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+
+                <!-- A7 -->
+                <div class="product-item">
+                    <h3>A7</h3>
+                    <p>Flagship A-Line model offering reference-quality sound with elegant proportions.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Type:</span> <span>2.5-way Floorstanding</span></li>
+                        <li><span class="spec-label">Drive Units:</span> <span>2x 180mm, 22mm</span></li>
+                        <li><span class="spec-label">Frequency:</span> <span>27Hz - 25kHz</span></li>
+                        <li><span class="spec-label">Sensitivity:</span> <span>88dB</span></li>
+                    </ul>
+                    <a href="index.html#contact" class="secondary-button" style="width: 100%; text-align: center; margin-top: 20px;">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="cta-section" style="margin-top: 80px;">
+                <a href="index.html#products" class="secondary-button">View All Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>SPENDOR</h3>
+                    <p>British Excellence Since 1969</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Collections</h4>
+                        <a href="a-line.html">A-Line Loudspeakers</a>
+                        <a href="d-line.html">D-Line Loudspeakers</a>
+                        <a href="classic.html">Classic Loudspeakers</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="index.html#about">About Us</a>
+                        <a href="index.html#history">Our History</a>
+                        <a href="#">News</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#">FAQ's</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://www.youtube.com/@spendor9405" target="_blank">YouTube</a>
+                        <a href="https://www.linkedin.com/company/spendor/" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/spendoraudio/" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Spendor Audio Systems Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
